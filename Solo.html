@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صفحتي الشخصية - مطور تطبيقات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .profile-card {
+      background: #1c1f26;
+      border-radius: 20px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .profile-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+    }
+    .left-section {
+      background: linear-gradient(135deg, #007991, #78ffd6);
+      color: #1c1f26;
+      flex: 1 1 350px;
+      padding: 40px 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      margin: 0 auto 25px;
+      transition: transform 0.3s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 25px;
+      letter-spacing: 1.1px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .social-icons a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #0088cc;
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,136,204,0.5);
+    }
+    .social-icons a:hover {
+      background: #005f8a;
+      box-shadow: 0 6px 15px rgba(0,95,138,0.7);
+    }
+    .social-icons a svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    .right-section {
+      flex: 2 1 520px;
+      background: #282c34;
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      color: #c9d1d9;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: #78ffd6;
+      border-bottom: 3px solid #007991;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .bio {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #d1d5db;
+    }
+    .skills-list, .experience-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+    }
+    .skills-list li, .experience-list li {
+      background: #007991;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(0,121,145,0.7);
+      transition: background 0.3s ease;
+      cursor: default;
+    }
+    .skills-list li:hover, .experience-list li:hover {
+      background: #78ffd6;
+      color: #1c1f26;
+      box-shadow: 0 6px 15px rgba(120,255,214,0.8);
+    }
+    @media (max-width: 768px) {
+      .profile-card {
+        flex-direction: column;
+        max-width: 350px;
+      }
+      .right-section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="left-section">
+      <img src="IMG_20250606_020734_138.jpg" alt="مطور تطبيقات" class="profile-img" />
+      <h1>Eslam Abdo</h1>
+      <h3>ོ Sのℓの𓄂༗࿐</h3>
+      <div class="social-icons">
+        <a href="https://t.me/Eslam_Dev" target="_blank" aria-label="Telegram" title="Telegram">
+          <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <circle cx="120" cy="120" r="120" fill="#37AEE2"/>
+            <path d="M90 165L170 120L90 75L90 110L130 120L90 130L90 165Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/YourInstagram" target="_blank" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#E1306C">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-3a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com/YourFacebook" target="_blank" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#1877F2">
+            <path d="M22 12a10 10 0 10-11.5 9.9v-7h-3v-3h3v-2.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.6.2 2.6.2v3h-1.5c-1.5 0-2 1-2 2v2.3h3.4l-.5 3h-2.9v7A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="right-section">
+      <div>
+        <h2 class="section-title">نبذة عني</h2>
+        <p class="bio">
+          مطور تطبيقات بخبرة واسعة في برمجة C++ و Java، متخصص في بناء حلول برمجية عالية الأداء لأنظمة Payson وأنظمة الدفع الإلكتروني.
+          أعمل على تطوير تطبيقات مخصصة تلبي احتياجات السوق الحديث، مع التركيز على الأمان والفعالية.
+        </p>
+      </div>
+      <div>
+        <h2 class="section-title">المهارات</h2>
+        <ul class="skills-list">
+          <li>C++</li>
+          <li>Java</li>
+          <li>Payson Integration</li>
+          <li>برمجة أنظمة الدفع الإلكتروني</li>
+          <li>تصميم واجهات المستخدم</li>
+          <li>تحليل الأداء وتحسين الكود</li>
+          <li>Git & GitHub</li>
+        </ul
